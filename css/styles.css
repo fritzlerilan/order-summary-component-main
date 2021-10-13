@@ -116,6 +116,12 @@ body {
     font-size: 0.9rem;
 }
 
+.hyperlink:hover {
+    cursor: pointer;
+    text-decoration: none;
+    opacity: 50%;
+}
+
 
 .button {
     display: block;
@@ -133,15 +139,26 @@ body {
 .button--success {
     color: #fff;
     background-color: var(--bright-blue);
+    box-shadow: 0px 8px 15px var(--desaturated-blue) ;
+}
+
+.button--success:hover {
+    opacity: 50%;
+    
 }
 
 .button--cancel {
     color: var(--desaturated-blue);
 }
 
+.button--cancel:hover {
+    color: var(--dark-blue);
+}
+
 @media (min-width: 500px) {
     body {
         background-image: url(../images/pattern-background-desktop.svg);
+        background-position: 0px -100px;
     }
 
     .container {
@@ -157,6 +174,10 @@ body {
     .item-description,
     .hyperlink {
         font-size: 0.8rem;
+    }
+
+    .button {
+        line-height: 2.5rem;
     }
 
 }
