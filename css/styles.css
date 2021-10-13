@@ -48,7 +48,7 @@ body {
 
 .heading-image-container {
     height: 30%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .heading-image{
@@ -62,7 +62,7 @@ body {
     line-height: 1.8;
     max-width: var(--inner-container-size);
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .summary-info h1 {
@@ -81,7 +81,7 @@ body {
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .item-img-container{
@@ -112,4 +112,26 @@ body {
     text-decoration: underline;
     font-weight: 900;
     font-size: 0.9rem;
+}
+
+
+.button {
+    display: block;
+    width: 270px;
+    margin: 0px auto 10px;
+    line-height: 3rem;
+    border-radius: 13px;
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 900;
+}
+
+.button--success {
+    color: #fff;
+    background-color: var(--bright-blue);
+}
+
+.button--cancel {
+    color: var(--desaturated-blue);
 }
