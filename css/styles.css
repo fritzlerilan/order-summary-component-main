@@ -38,7 +38,7 @@ body {
     text-align: center;
     margin: auto;
     width: 85%;
-    height: 600px;
+    height: 530px;
     background-color: var(--very-pale-blue);
     border-radius: 30px 30px 30px 30px;
     overflow: hidden;
@@ -54,3 +54,21 @@ body {
     object-fit: cover;
     object-position: center;
 }
+
+.summary-info {
+    padding: 10px 20px 10px 20px;
+    line-height: 1.8;
+    max-width: 77%;
+    margin: auto;
+}
+
+.summary-info h1 {
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.summary-info p {
+    font-size: 0.9rem;
+    color: var(--desaturated-blue);
+}
+
