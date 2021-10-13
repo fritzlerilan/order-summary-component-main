@@ -5,6 +5,7 @@
     --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
+    --inner-container-size: 77%;
 }
 
 html {
@@ -38,7 +39,7 @@ body {
     text-align: center;
     margin: auto;
     width: 85%;
-    height: 530px;
+    height: 80%;
     background-color: var(--very-pale-blue);
     border-radius: 30px 30px 30px 30px;
     overflow: hidden;
@@ -46,6 +47,7 @@ body {
 
 .heading-image-container {
     height: 27%;
+    margin-bottom: 30px;
 }
 
 .heading-image{
@@ -56,10 +58,10 @@ body {
 }
 
 .summary-info {
-    padding: 10px 20px 10px 20px;
     line-height: 1.8;
-    max-width: 77%;
+    max-width: var(--inner-container-size);
     margin: auto;
+    margin-bottom: 30px;
 }
 
 .summary-info h1 {
@@ -72,3 +74,35 @@ body {
     color: var(--desaturated-blue);
 }
 
+.item-container {
+    display: flex;
+    max-width: var(--inner-container-size);
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.item-description {
+    line-height: 0.4;
+    font-size: 0.8rem;
+    margin-left: -20px;
+    text-align: left;
+}
+
+.item-description h3 {
+    font-weight: 900;
+}
+
+.item-description p {
+    font-weight: 600;
+    color: var(--desaturated-blue);
+    font-size: 0.9rem;
+}
+
+.hyperlink {
+    color: var(--bright-blue);
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 0.9rem;
+}
