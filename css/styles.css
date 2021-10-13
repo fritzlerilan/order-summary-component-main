@@ -1,0 +1,161 @@
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+    --inner-container-size: 77%;
+}
+
+html {
+    font-size: 16px;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+    background-color: var(--pale-blue);
+    background-image: url(../images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.attribution {
+    position: absolute;
+    bottom: 0;
+
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.container {
+    text-align: center;
+    margin: auto;
+    width: 330px;
+    height: 80%;
+    background-color: var(--very-pale-blue);
+    border-radius: 15px 15px 15px 15px;
+    overflow: hidden;
+    box-shadow: 1px 20px 50px -40px var(--desaturated-blue) ;
+}
+
+.heading-image-container {
+    height: 30%;
+    margin-bottom: 30px;
+}
+
+.heading-image{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.summary-info {
+    line-height: 1.8;
+    max-width: var(--inner-container-size);
+    margin: auto;
+    margin-bottom: 15px;
+    width: 250px;
+}
+
+.summary-info h1 {
+    font-weight: 900;
+    font-size: 1.4rem;
+}
+
+.summary-info p {
+    font-size: 0.9rem;
+    color: var(--desaturated-blue);
+}
+
+.item-container {
+    display: flex;
+    max-width: var(--inner-container-size);
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.item-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-description {
+    line-height: 0.4;
+    margin-left: -20px;
+    text-align: left;
+}
+
+.item-description h3 {
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.item-description p {
+    font-weight: 600;
+    color: var(--desaturated-blue);
+    font-size: 0.9rem;
+}
+
+.hyperlink {
+    color: var(--bright-blue);
+    text-decoration: underline;
+    font-weight: 900;
+    font-size: 0.9rem;
+}
+
+
+.button {
+    display: block;
+    width: 270px;
+    margin: 0px auto 10px;
+    line-height: 3rem;
+    border-radius: 13px;
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.button--success {
+    color: #fff;
+    background-color: var(--bright-blue);
+}
+
+.button--cancel {
+    color: var(--desaturated-blue);
+}
+
+@media (min-width: 500px) {
+    body {
+        background-image: url(../images/pattern-background-desktop.svg);
+    }
+
+    .container {
+        width: 370px;
+    }
+
+    .heading-image-container {
+        margin-bottom: 20px;
+    }
+    
+    .summary-info p,
+    .button,
+    .item-description,
+    .hyperlink {
+        font-size: 0.8rem;
+    }
+
+}
